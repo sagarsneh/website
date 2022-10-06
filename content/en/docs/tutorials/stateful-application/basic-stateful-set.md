@@ -756,7 +756,7 @@ Get the `web-1` Pod's container image:
 kubectl get pod web-1 --template '{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
 ```
 ```
-registry.k8s.io/nginx-slim:0.8
+gcr.io/google_containers/nginx-slim:0.8
 ```
 
 `web-1` was restored to its original configuration because the Pod's ordinal
